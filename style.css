@@ -1,0 +1,119 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+a{
+  text-decoration: none;
+}
+.cap{
+  position: fixed;
+  height: 10vh;
+  width: 100%;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 18px;
+}
+.cap_text{
+  color: white;
+  text-align: left; 
+  margin: 0 0 0 10%;
+}
+.cap_text_navigation{
+  color: white;
+  margin: 0vh 2vh;
+}
+.cap_text_right{
+  color: white;
+  text-align: right; 
+  margin: 0 10% 0 0;
+  background-color: blueviolet;
+  padding: 1.5vh;
+  border-radius: 20px;
+  font-size: 15px;
+}
+.image_1{
+  height: 102%; 
+  width: 100%; 
+  position: relative;
+  z-index: 1;
+}
+.lear_expert{  
+  position: absolute; /* добавляем позиционирование */
+  opacity: 0.8; 
+  height: 111vh;  
+  width: 100%;  
+  background-color: grey;   
+  top: 0%; /* задаем положение сверху */
+  left: 0%; /* задаем положение слева */
+  z-index: 1;
+}
+.courses{
+  margin: -1vh 0vh 0vh 0vh;
+  width: 100%;
+  height: 20vh;
+  background-color: blueviolet;
+  z-index: 2;
+  position: relative;
+  display: block;
+  color: white;
+  text-align: center;
+  font-size: 35px;
+}
+.php{
+  height: 10vh;
+  width: 10vh;
+  background-color: black;
+}
+.text_learn_expert{
+  width: 35%;
+  color: white;
+  font-size: 45px;
+  position: absolute;
+  top: 40%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  margin: 0 0;
+}
+.text_expert_podtext{
+  font-size: 20px;
+  margin: -2vh 0;
+}
+.first_photo {
+  position: relative;
+}
+
+.text_couses{
+  position: absolute;
+  margin: 5vh 0vh 0vh 0vh;
+  left: 45%;
+}
+@media screen and (max-width: 1000px){
+  .text_learn_expert{
+    font-size: 20px;
+  }
+  
+}
+
+@media screen and (max-width: 600px){
+  .text_couses{
+    position: absolute;
+    margin: 5vh 0vh 0vh 0vh;
+    left: 35%;
+  }
+  .cap_text_navigation{
+    display: none;
+  }
+  .courses{
+    height: 8vh;
+  }
+  .text_couses{
+    margin: 2vh 0vh 0vh 0vh;
+    left: 35%;
+  }
+  .text_learn_expert{
+    font-size: 5px;
+  }
+}
+
