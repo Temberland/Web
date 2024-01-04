@@ -70,6 +70,7 @@ a{
 }
 .first_photo {
   position: relative;
+  overflow: hidden;
 }
 .courses{
   padding: 10vh 0vh;
@@ -91,27 +92,50 @@ a{
 } 
 .card-1{  
   margin: 0vh 5vh 10vh 5vh;  /*изменили отступы*/  
-  height: 50vh;  
+  height: 47vh;  
   width: 40vh;  
   background-color: azure;  
   box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.2);
   display: inline-block; 
   border-radius: 10px;
+  right: 0px;
+  bottom: 0px;
 } 
 .image_in_card{
   width: 100%;
-  border-radius: 10px;
+  border-radius: 10px 10px 0px 0px;
 }
 .name_courses{
   font-size: 20px;
   color: #7971ea;
-  margin: 0 0;
+  margin: 2vh 0 0 0;
 }
 .description_course{
   font-size: 15px;
   color: gray;
-  margin: 0 0;
+  margin: 0 0 3vh 0;
 }
+.price_course{
+  height: 5vh;
+  padding: 0.5vh;
+  text-align: right;
+  color: white;
+  float: right;
+  background-color: #7971ea;
+  border-radius: 10px 0px 0px 10px;
+  margin: -5vh 0 0 0;
+  z-index: 5;
+  position: relative;
+  font-size: 28px;
+}
+.card-1 :hover{
+  right: 10px;
+  bottom: 10px;
+}
+
+
+
+
 @media screen and (max-width: 1150px){
   .card-1{  
     display: block;
