@@ -37,7 +37,7 @@ a{
   z-index: 10;
 }
 .image_1{
-  height: 102%; 
+  height: 100%; 
   width: 100%; 
   position: relative;
   z-index: 1;
@@ -121,6 +121,13 @@ a{
 }
 
 @media screen and (max-width: 600px){
+  .image_1{
+    height: 200%; 
+    width: 200%; 
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+  }
   .cap_text_navigation{
     display: none;
   }
@@ -136,12 +143,7 @@ a{
   .text_expert_podtext{
     font-size: 14px;
   }
-  .image_1{
-    height: 200%; 
-    width: 200%; 
-    position: relative;
-    z-index: 1;
-  }
+
   .cap{
     width: 50%;
   }
