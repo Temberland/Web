@@ -100,6 +100,7 @@ a{
   border-radius: 10px;
   right: 0px;
   bottom: 0px;
+  position: relative;
 } 
 .image_in_card{
   width: 100%;
@@ -167,10 +168,5 @@ a{
   .text_expert_podtext{
     font-size: 14px;
   }
-
-  .cap{
-    width: 50%;
-  }
-
 }
 
