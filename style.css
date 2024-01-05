@@ -15,6 +15,7 @@ a{
   justify-content: space-between;
   font-size: 18px;
   z-index: 10;
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.2);
 }
 .cap_text{
   color: white;
@@ -83,15 +84,11 @@ a{
   color: white;
   text-align: center;
   font-size: 35px;
+  font-weight: 600;
+  font-size: 50px;
 }
-.text_couses {
-  position: absolute;
-  margin: 5vh auto; /* изменить левое и правое отступы на auto */
-  width: 100%; /* добавить ширину 100% */
-  justify-content: center; /* выравнивание по центру по горизонтали */
-} 
 .card-1{  
-  margin: 0vh 5vh 10vh 5vh;  /*изменили отступы*/  
+  margin: -5vh 5vh 5vh 5vh;  /*изменили отступы*/  
   height: 47vh;  
   width: 40vh;  
   background-color: azure;  
@@ -101,6 +98,8 @@ a{
   right: 0px;
   bottom: 0px;
   position: relative;
+  text-align: center;
+  z-index: 2;
 } 
 .image_in_card{
   width: 100%;
@@ -133,14 +132,108 @@ a{
   right: 10px;
   bottom: 10px;
 }
+.courses_program{
+  width: 100%;
+  display: flex; /* добавили свойство для выравнивания по центру */
+  justify-content: center; /* выравнивание по центру */
+  align-items: center; /* выравнивание по центру */
+}
+.our_programs {
+  text-align: center;
+  margin: 5vh 0;
+}
 
+.text_our {
+  font-weight: 1000;
+  font-size: 50px;
+  text-align: center;
+  margin: 5vh 0 5vh 0;
+}
 
+.podtext_our {
+  font-weight: 500;
+  width: 40%;
+  font-size: 16px;
+  margin: 0 auto;
+  color: gray;
+  margin: 2vh auto 0 auto;
+}
+.photo_our_programs{
+  width: 40%;
+}
+.text_under_photo_program{
+  font-weight: 500;
+  font-size: 30px;
+  margin: 0 auto;
+}
+.podtext_under_photo_program{
+  width: 50%; 
+  text-align: center; 
+  color: grey; 
+  margin: 2vh auto; 
+  font-size: 20px;
+}
+.statistic{
+  text-align: left;
+}
+.stat-1{ 
+  margin: 3vh auto 0 auto; 
+  width: 80%; 
 
+} 
+.learn_image{ 
+  width: 10%; 
+  display: inline; 
+  vertical-align: middle; 
 
-@media screen and (max-width: 1150px){
+} 
+.text_learn{ 
+  margin: 0 0 0 2vh; 
+  width: 100%; 
+  display: inline; 
+  vertical-align: middle; 
+  color: #7971ea; 
+}
+.card-v2{
+  margin: auto 2vh;  
+  height: 50vh;  
+  width: 80vh;   
+  display: inline-block; 
+  right: 0px;
+  bottom: 0px;
+  position: relative;
+  text-align: center;
+  z-index: 2;
+}
+
+.card-teach{
+  background-color: white;
+  border-radius: 0px;
+  box-shadow: none;
+  border: 1px solid rgba(169, 169, 169, 0.3);
+  height: 35vh;
+  margin: 15vh 5vh auto 5vh;
+}
+.image_teach{
+  width: 75%;
+  border-radius: 100%;
+  margin: -12vh 0 0 0;
+}
+
+.cap:not(:first-child) {
+  background-color: white;
+}
+
+@media screen and (max-width: 1000px){
   .card-1{  
     display: block;
     margin: 2.5vh auto;
+  }
+  .courses_program{
+    display: block;
+  }
+  .podtext_under_photo_program{
+    display: block;
   }
   
 }
