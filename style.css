@@ -15,7 +15,6 @@ a{
   justify-content: space-between;
   font-size: 18px;
   z-index: 10;
-  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.2);
 }
 .cap_text{
   color: white;
@@ -128,10 +127,6 @@ a{
   position: relative;
   font-size: 28px;
 }
-.card-1 :hover{
-  right: 10px;
-  bottom: 10px;
-}
 .courses_program{
   width: 100%;
   display: flex; /* добавили свойство для выравнивания по центру */
@@ -185,7 +180,6 @@ a{
   width: 10%; 
   display: inline; 
   vertical-align: middle; 
-
 } 
 .text_learn{ 
   margin: 0 0 0 2vh; 
@@ -219,10 +213,74 @@ a{
   border-radius: 100%;
   margin: -12vh 0 0 0;
 }
-
-.cap:not(:first-child) {
-  background-color: white;
+.why_us_card{ 
+  width: 30%;
+  height: 50vh; 
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);  
+  display: inline-block; 
+  vertical-align: top; 
+  margin: 0 auto; /* Добавлено выравнивание по центру по горизонтали */
+  margin: 0 2% 0 18%;
+} 
+.why_us_image{ 
+  width: 10%; 
+  display: inline-block; 
+} 
+.image_why_us{ 
+  width: 30%; 
+  height: 10%; 
+  margin: 0 -10% 0 0;
 }
+.futer {
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(169,169,169,0.1);
+}
+.about_school {
+  display: inline-block;
+  width: 30%;
+  margin: 0 50vh 0 -20vh;
+}
+.message_us {
+  justify-content: center;
+  align-items: center;
+  width: 10%;
+  max-width: 0 0 0 10vh;
+  text-align: center;
+}
+.imeges_futer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.message_us_photo {
+  width: 80%;
+  display: inline-block;
+  margin: 1vh 2vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width: 1000px){
   .card-1{  
@@ -235,7 +293,7 @@ a{
   .podtext_under_photo_program{
     display: block;
   }
-  
+
 }
 
 @media screen and (max-width: 600px){
