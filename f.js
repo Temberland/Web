@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
         document.querySelector('.SM2').style.color = 'black'; 
         document.querySelector('.SM3').style.color = 'black'; 
       } else {   
-        document.querySelector('.cap').style.transition = 'background-color 0.8s ease';   
+        document.querySelector('.cap').style.transition = 'background-color 0.7s ease';   
         document.querySelector('.cap').style.backgroundColor = '';   
         document.querySelector('.cap').style.boxShadow = 'none'; 
         document.querySelector('.cap_text').style.color = 'white'; 
