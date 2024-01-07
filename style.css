@@ -104,7 +104,7 @@ a{
   position: relative;
   color: white;
   text-align: center;
-  font-size: 35px;
+  font-size: 35%;
   font-weight: 600;
   font-size: 50px;
 }
@@ -196,8 +196,8 @@ a{
 .stat-1{ 
   margin: 3vh auto 0 auto; 
   width: 80%; 
-
 } 
+
 .learn_image{ 
   width: 10%; 
   display: inline; 
@@ -255,7 +255,7 @@ a{
 }
 .futer {
   width: 100%;
-  height: 20vh;
+  height: 30vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -264,7 +264,7 @@ a{
 .about_school {
   display: inline-block;
   width: 30%;
-  margin: 0 50vh 0 -20vh;
+  margin: 0 30% 0 -10%;
 }
 .message_us {
   justify-content: center;
@@ -296,6 +296,9 @@ a{
   color:rgba(128, 128, 128, 0.8);
 }
 
+.courses{
+  font-size: 250%;
+}
 
 
 
@@ -304,8 +307,27 @@ a{
 
 
 
+@media screen and (max-width: 1150px){
+  .card-teach{
+    display: block;
+    margin: 15vh auto auto auto;
+  }
+  .image_why_us{
+    display: block;
+    margin: 4vh auto;
+    width: 80%; 
+    height: auto; 
+  }
+  .why_us_card{
+    display: block; 
+    margin: 15vh auto; /* Добавлено выравнивание по центру по горизонтали */ 
+    padding: 1vh;
+    width: 50%;
+    height: 58vh;
+  }
 
 
+}
 
 
 
@@ -320,16 +342,43 @@ a{
     display: block;
     margin: 2.5vh auto;
   }
+  .card-teach{
+    display: block;
+    margin: 15vh auto auto auto;
+  }
   .courses_program{
     display: block;
   }
   .podtext_under_photo_program{
     display: block;
   }
-
+  .why_us_card{
+    width: 60%;
+    height: 58vh;
+    margin: auto auto;
+  }
+  
 }
 
-@media screen and (max-width: 600px){
+
+@media screen and (max-width: 900px){
+  .image_why_us{
+    display: block;
+    margin: 4vh auto;
+    width: 70%; 
+    height: auto; 
+  }
+}
+
+
+@media screen and (max-width: 850px){
+  .why_us_card{
+    width: 70%;
+    height: 58vh;
+  }
+}
+
+@media screen and (max-width: 800px){
   .image_1{
     height: 200%; 
     width: 200%; 
@@ -352,5 +401,48 @@ a{
   .text_expert_podtext{
     font-size: 14px;
   }
+  .cap_text_right{
+    display: none;
+  }
+  .photo_our_programs{
+    width: 60%;
+  }
 }
+
+
+  @media screen and (max-width: 750px){
+      .text_our{
+        font-size: 40px;
+      }
+      .podtext_our{
+        font-size: 14px;
+      }
+    }
+
+
+  @media screen and (max-width: 600px){
+    .why_us_card{
+      width: 80%;
+      height: 53vh;
+    }
+  }
+
+
+  @media screen and (max-width: 550px){
+    .podtext_our{
+      width: 70%;
+    }
+  }
+
+
+
+
+
+  @media screen and (max-width: 450px){
+    .why_us_card{
+      width: 90%;
+      height: 53vh;
+    }
+  }
+
 
