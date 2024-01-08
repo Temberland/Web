@@ -478,7 +478,7 @@ a{
 
   @media screen and (max-width: 650px){
     .imeges_futer{
-      width: 60%;
+      width: 70%;
     }
   }
   @media screen and (max-width: 600px){
@@ -535,7 +535,7 @@ a{
       width: 100%; 
     }
     .imeges_futer{
-      width: 70%;
+      width: 90%;
     }
   }
 
