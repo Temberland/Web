@@ -308,6 +308,24 @@ a{
 
 
 @media screen and (max-width: 1150px){
+  .imeges_futer { 
+    display: flex;  
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: column;  
+    width: 70%; 
+    margin: 0 auto; /* добавляем отступы слева и справа автоматически */
+  }
+  .message_us_photo {
+    margin: 1vh; /* убираем отступы слева и справа */
+  }
+  .imeges_futer {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    width: 70%;
+  }
   .card-teach{
     display: block;
     margin: 15vh auto auto auto;
@@ -315,18 +333,20 @@ a{
   .image_why_us{
     display: block;
     margin: 4vh auto;
-    width: 80%; 
+    width: 60%; 
     height: auto; 
   }
   .why_us_card{
     display: block; 
     margin: 15vh auto; /* Добавлено выравнивание по центру по горизонтали */ 
-    padding: 1vh;
-    width: 50%;
-    height: 58vh;
+    padding: 1vh 0vh 4vh 0vh;
+    width: 40%;
+    height: auto;
   }
-
-
+  .courses{
+    font-size: 200%;
+    padding: 7vh 0vh;
+  }
 }
 
 
@@ -340,7 +360,7 @@ a{
 @media screen and (max-width: 1000px){
   .card-1{  
     display: block;
-    margin: 2.5vh auto;
+    margin: -3.5vh auto 7vh auto;
   }
   .card-teach{
     display: block;
@@ -353,8 +373,7 @@ a{
     display: block;
   }
   .why_us_card{
-    width: 60%;
-    height: 58vh;
+    width: 50%;
     margin: auto auto;
   }
   
@@ -365,16 +384,27 @@ a{
   .image_why_us{
     display: block;
     margin: 4vh auto;
-    width: 70%; 
+    width: 60%; 
     height: auto; 
   }
 }
 
 
 @media screen and (max-width: 850px){
+  .learn_image{
+    width: 12%;
+  }
   .why_us_card{
     width: 70%;
-    height: 58vh;
+  }
+  .text_our, .text_under_photo_program{
+    font-size: xx-large*3;
+  }
+  .podtext_our, .podtext_under_photo_program{
+    font-size: medium;
+  }
+  .image_why_us{
+    width: 70%; 
   }
 }
 
@@ -410,20 +440,28 @@ a{
 }
 
 
-  @media screen and (max-width: 750px){
-      .text_our{
-        font-size: 40px;
-      }
-      .podtext_our{
-        font-size: 14px;
-      }
+@media screen and (max-width: 750px){
+    .text_our{
+      font-size: 40px;
     }
+    .podtext_our, .podtext_under_photo_program{
+      font-size: 15px;
+    }
+    .podtext_under_photo_program, .podtext_our{
+      width: 75%;
+    }
+  }
 
 
   @media screen and (max-width: 600px){
     .why_us_card{
       width: 80%;
-      height: 53vh;
+    }
+    .podtext_under_photo_program, .podtext_our{
+      width: 80%;
+    }
+    .image_why_us{
+      width: 90%; 
     }
   }
 
@@ -441,7 +479,13 @@ a{
   @media screen and (max-width: 450px){
     .why_us_card{
       width: 90%;
-      height: 53vh;
+      height: auto;
+    }
+    .podtext_under_photo_program, .podtext_our{
+      width: 90%;
+    }
+    .image_why_us{
+      width: 100%; 
     }
   }
 
