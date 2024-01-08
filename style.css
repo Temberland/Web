@@ -253,29 +253,32 @@ a{
   height: 10%; 
   margin: 0 -10% 0 0;
 }
-.futer {
-  width: 100%;
-  height: 30vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(169,169,169,0.1);
-}
-.about_school {
-  display: inline-block;
-  width: 30%;
-  margin: 0 30% 0 -10%;
-}
-.message_us {
-  justify-content: center;
-  align-items: center;
-  width: 10%;
-  max-width: 0 0 0 10vh;
-  text-align: center;
-  font-size: 150%;
-  font-family: 'BebasNeue';
+.futer { 
+  width: 100%; 
+  height: 30vh; 
+  display: flex; 
+  justify-content: space-between;  /* изменение здесь */
+  align-items: center; 
+  background-color: rgba(169,169,169,0.1); 
+} 
+
+.about_school { 
+  display: inline-block; 
+  width: 30%; 
+  margin: 0 0 0 10%;  /* изменение здесь */
+} 
+
+.message_us { 
+  justify-content: flex-end;  /* изменение здесь */
+  align-items: center; 
+  width: 10%; 
+
+  text-align: center; 
+  font-size: 150%; 
+  font-family: 'BebasNeue'; 
   color: rgba(0, 0, 0, 0.8); 
-}
+  margin: 0 10% 0 0; 
+} 
 .imeges_futer {
   display: flex;
   justify-content: center;
@@ -380,12 +383,25 @@ a{
 }
 
 
+@media screen and (max-width: 950px){
+  .message_us{
+    width: 20%;
+  }
+  .imeges_futer{
+    width: 45%;
+  }
+}
+
+/* margin: 0 30% 0 -10%; */
 @media screen and (max-width: 900px){
   .image_why_us{
     display: block;
     margin: 4vh auto;
     width: 60%; 
     height: auto; 
+  }
+  .about_school{
+    font-size: 15px;
   }
 }
 
@@ -450,9 +466,21 @@ a{
     .podtext_under_photo_program, .podtext_our{
       width: 75%;
     }
+    .about_school {
+      width: 40%;
+      /* margin: 0 0 0 10vh; */
+    }
+    /* .message_us { 
+      margin: 0 10vh 0 0; 
+    }  */
+
   }
 
-
+  @media screen and (max-width: 650px){
+    .imeges_futer{
+      width: 60%;
+    }
+  }
   @media screen and (max-width: 600px){
     .why_us_card{
       width: 80%;
@@ -470,7 +498,26 @@ a{
     .podtext_our{
       width: 70%;
     }
+    .about_school{
+      width: 50%;
+    }
   }
+@media screen and (max-width: 550px){
+  .podtext_our{
+    width: 70%;
+  }
+  .about_school{
+    width: 50%;
+  }
+}
+@media screen and (max-width: 550px){
+  .about_school{
+    font-size: 13px;
+  }
+  .message_us{
+    font-size: 18px;
+  }
+}
 
 
 
@@ -486,6 +533,9 @@ a{
     }
     .image_why_us{
       width: 100%; 
+    }
+    .imeges_futer{
+      width: 70%;
     }
   }
 
