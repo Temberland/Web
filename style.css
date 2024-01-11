@@ -384,7 +384,9 @@ a{
 .right{
   display: none;
 }
-
+.off_out{
+  display: none;
+}
 
 
 
@@ -508,12 +510,13 @@ a{
     height: 400%;
     background-color: white;
     color: #000;
-    transform: translate(300px);
+    transform: translate(350px);
   }
   .off_out{
     width: 60%;
     height: 200%;
     position: fixed;
+    display: block;
     border: none;
     background-color: rgba(0, 0, 0, 0);
     left: 0;

@@ -38,13 +38,13 @@ document.addEventListener('DOMContentLoaded', function() {
   burgerMenu.addEventListener('click', () => {
     if (isMenuOpen) {
       menu.style.transition = 'transform 0.3s ease-in-out';
-      menu.style.transform = 'translateX(300px)';
+      menu.style.transform = 'translateX(350px)';
       offOut.style.transform = 'translateX(-500px)'
       isMenuOpen = false;
     } else {
       menu.style.transition = 'transform 0.3s ease-in-out';
       menu.style.transform = 'translateX(0)';
-      offOut.style.transform = 'translateX(0)'
+      offOut.style.transform = 'translateX(0)';
       document.querySelector('.cap_text_navigation').style.color = 'black'; 
       document.querySelector('.SM1').style.color = 'black'; 
       document.querySelector('.SM2').style.color = 'black'; 
@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const offOut = document.querySelector('.off_out');    
   offOut.addEventListener('click', () => {
       menu.style.transition = 'transform 0.3s ease-in-out';
-      menu.style.transform = 'translateX(300px)';
+      menu.style.transform = 'translateX(350px)';
       offOut.style.transform = 'translateX(-500px)'
       isMenuOpen = false;
   });
@@ -64,12 +64,23 @@ document.addEventListener('DOMContentLoaded', function() {
   function performActionBasedOnScreenWidth() {  
     const screenWidth = window.innerWidth;  
     const pageYOffset = window.pageYOffset;
-      
-    if ((screenWidth >= 800) && (pageYOffset === 0)) {  
+    if (screenWidth > 800){
+      menu.style.transition = 'transform 0.0s ease-in-out';
+      menu.style.transform = 'translateX(0px)';
+      isMenuOpen = false
+    }
+    else{
+      menu.style.transform = 'translateX(350px)';
+      isMenuOpen = false
+    }
+
+
+
+    if ((screenWidth >= 802) && (pageYOffset === 0)) {  
       document.querySelector('.cap_text_navigation').style.color = 'white';   
       document.querySelector('.SM1').style.color = 'white';   
       document.querySelector('.SM2').style.color = 'white';   
-      document.querySelector('.SM3').style.color = 'white';   
+      document.querySelector('.SM3').style.color = 'white'; 
     }
     else{
       document.querySelector('.cap_text_navigation').style.color = 'black'; 
