@@ -512,6 +512,7 @@ a{
     background-color: white;
     color: #000;
     transform: translate(350px);
+    box-shadow: -10px 0 10px -5px rgba(0, 0, 0, 0.1);
   }
   .off_out{
     width: 60%;
