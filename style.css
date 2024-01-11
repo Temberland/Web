@@ -30,6 +30,7 @@ a{
   font-size: 18px;
   z-index: 10;
 }
+
 .cap_text{
   color: white;
   text-align: left; 
@@ -53,11 +54,14 @@ a{
   z-index: 10;
   transform: translate(-2px, -2px);
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+
 }
 .cap_text_right:hover {
   transform: translate(0px, 0px);
   box-shadow: none;
 }
+
+
 .image_1{
   height: 100%; 
   width: 100%; 
@@ -310,6 +314,7 @@ a{
 
 
 
+
 @media screen and (max-width: 1150px){
   .imeges_futer { 
     display: flex;  
@@ -352,6 +357,33 @@ a{
   }
 }
 
+
+.burger-menu{
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  position: fixed;
+  display: none;
+  left: 90%;
+  z-index: 5;
+}
+.burger-menu span{
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  background-color: black;
+  left: 5px;
+}
+.burger-menu span:nth-child(1){
+  transform: translateY(-10px);
+}
+.burger-menu span:nth-child(3){
+  transform: translateY(10px);
+}
+.right{
+  display: none;
+}
 
 
 
@@ -425,15 +457,23 @@ a{
 }
 
 @media screen and (max-width: 800px){
+
+
+  .cap{
+    justify-content: space-between;
+  }
+  .burger-menu{
+    display: block;
+    margin-left: auto;
+    margin-right: 10%;
+  
+  }  
   .image_1{
     height: 200%; 
     width: 200%; 
     position: relative;
     z-index: 1;
     overflow: hidden;
-  }
-  .cap_text_navigation{
-    display: none;
   }
   .courses{
     height: 8vh;
@@ -447,11 +487,38 @@ a{
   .text_expert_podtext{
     font-size: 14px;
   }
+
+  .photo_our_programs{
+    width: 60%;
+  }
   .cap_text_right{
     display: none;
   }
-  .photo_our_programs{
+  .right, .cap_text_navigation{
+    display: block;
+    color: #000;
+    margin: 3vh auto;
+  }
+  .right{
+    text-align: center;
+  }
+  .menu{
+    padding: 100vh 5vh 50vh 5vh ;
+    width: 30%;
+    height: 400%;
+    background-color: white;
+    color: #000;
+    transform: translate(300px);
+  }
+  .off_out{
     width: 60%;
+    height: 200%;
+    position: fixed;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    left: 0;
+    z-index: 10000;
+    transform: translate(-500px);
   }
 }
 
@@ -468,12 +535,8 @@ a{
     }
     .about_school {
       width: 40%;
-      /* margin: 0 0 0 10vh; */
-    }
-    /* .message_us { 
-      margin: 0 10vh 0 0; 
-    }  */
 
+    }
   }
 
   @media screen and (max-width: 650px){
@@ -494,14 +557,7 @@ a{
   }
 
 
-  @media screen and (max-width: 550px){
-    .podtext_our{
-      width: 70%;
-    }
-    .about_school{
-      width: 50%;
-    }
-  }
+
 @media screen and (max-width: 550px){
   .podtext_our{
     width: 70%;
@@ -511,12 +567,19 @@ a{
   }
 }
 @media screen and (max-width: 550px){
+  .burger-menu{
+    left: 85%;
+  }
   .about_school{
     font-size: 13px;
   }
   .message_us{
     font-size: 18px;
   }
+  .off_out{
+    left: 0;
+  }
+  
 }
 
 
