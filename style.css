@@ -69,13 +69,13 @@ a{
   z-index: 1;
 }
 .lear_expert{  
-  position: absolute; /* добавляем позиционирование */
+  position: absolute; 
   opacity: 0.8; 
   height: 100%;  
   width: 100%;  
   background-color: grey;   
-  top: 0%; /* задаем положение сверху */
-  left: 0%; /* задаем положение слева */
+  top: 0%; 
+  left: 0%; 
   z-index: 1;
 }
 
@@ -113,7 +113,7 @@ a{
   font-size: 50px;
 }
 .card-1{  
-  margin: -5vh 5vh 5vh 5vh;  /*изменили отступы*/  
+  margin: -5vh 5vh 5vh 5vh;   
   height: 47vh;  
   width: 40vh;  
   background-color: azure;  
@@ -155,9 +155,9 @@ a{
 }
 .courses_program{
   width: 100%;
-  display: flex; /* добавили свойство для выравнивания по центру */
-  justify-content: center; /* выравнивание по центру */
-  align-items: center; /* выравнивание по центру */
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
 }
 .our_programs {
   text-align: center;
@@ -245,7 +245,7 @@ a{
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);  
   display: inline-block; 
   vertical-align: top; 
-  margin: 0 auto; /* Добавлено выравнивание по центру по горизонтали */
+  margin: 0 auto;
   margin: 0 2% 0 18%;
 } 
 .why_us_image{ 
@@ -261,7 +261,7 @@ a{
   width: 100%; 
   height: 30vh; 
   display: flex; 
-  justify-content: space-between;  /* изменение здесь */
+  justify-content: space-between;  
   align-items: center; 
   background-color: rgba(169,169,169,0.1); 
 } 
@@ -269,11 +269,11 @@ a{
 .about_school { 
   display: inline-block; 
   width: 30%; 
-  margin: 0 0 0 10%;  /* изменение здесь */
+  margin: 0 0 0 10%;  
 } 
 
 .message_us { 
-  justify-content: flex-end;  /* изменение здесь */
+  justify-content: flex-end;  
   align-items: center; 
   width: 10%; 
 
@@ -322,10 +322,10 @@ a{
     align-items: center; 
     flex-direction: column;  
     width: 70%; 
-    margin: 0 auto; /* добавляем отступы слева и справа автоматически */
+    margin: 0 auto; 
   }
   .message_us_photo {
-    margin: 1vh; /* убираем отступы слева и справа */
+    margin: 1vh; 
   }
   .imeges_futer {
     display: flex; 
@@ -426,7 +426,6 @@ a{
   }
 }
 
-/* margin: 0 30% 0 -10%; */
 @media screen and (max-width: 900px){
   .image_why_us{
     display: block;
@@ -459,7 +458,9 @@ a{
 }
 
 @media screen and (max-width: 800px){
-
+  .cap_text{
+    position: absolute;
+  }
 
   .cap{
     justify-content: space-between;
@@ -514,8 +515,8 @@ a{
   }
   .off_out{
     width: 60%;
-    height: 200%;
-    position: fixed;
+    height: 2000%;
+    position: relative;
     display: block;
     border: none;
     background-color: rgba(0, 0, 0, 0);
@@ -546,6 +547,9 @@ a{
     .imeges_futer{
       width: 70%;
     }
+    .stat-1{
+      width: 85%;
+    }
   }
   @media screen and (max-width: 600px){
     .why_us_card{
@@ -557,6 +561,7 @@ a{
     .image_why_us{
       width: 90%; 
     }
+   
   }
 
 
@@ -582,9 +587,17 @@ a{
   .off_out{
     left: 0;
   }
+  .stat-1{
+    width: 90%;
+    font-size: 15px;
+  }
   
 }
-
+@media screen and (max-width: 500px){
+  .stat-1{
+    font-size: 14px;
+  }
+}
 
 
 
@@ -603,6 +616,7 @@ a{
     .imeges_futer{
       width: 90%;
     }
+    
   }
 
 
